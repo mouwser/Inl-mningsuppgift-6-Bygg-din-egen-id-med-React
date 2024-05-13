@@ -31,3 +31,20 @@ GymRecipes is a web application designed to consolidate fitness and nutrition re
     A menu bar will be available throughout the application, allowing users to easily navigate between the different pages.
     The menu will include options to access the start screen, workout programs, meal plans, and contact information.
 
+## NEW Requirements!
+
+- Login and create account:
+    Be able to login or create a new account for new users.
+
+- Admin page:
+    for editing and adding workout programs and meal plans.
+
+- Contact form:
+    contact form for contact.
+
+- Achievments:
+    add a page for the achievments and implement some of the functions.
+
+- Click programs:
+    be able to click on the workout and meal programs and see info about them.
+
