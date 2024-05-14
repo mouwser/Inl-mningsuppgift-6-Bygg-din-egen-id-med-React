@@ -36,7 +36,7 @@ GymRecipes is a web application designed to consolidate fitness and nutrition re
 - Login and create account:
     Be able to login or create a new account for new users.
 
-- Admin page:
+- Edit and Delete:
     for editing and adding workout programs and meal plans.
 
 - Contact form:

@@ -18,6 +18,15 @@
     margin-right: 40px; 
   }
   
+  .navLinklogin {
+    font-weight: bold;
+    color: white; 
+    text-decoration:none;
+    padding: 10px;
+    cursor: pointer; 
+   
+  }
+
   .navLink {
     font-weight: bold;
     color: white; 
