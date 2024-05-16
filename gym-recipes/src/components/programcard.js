@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from '@/styles/openmodal.module.css';
 import axios from 'axios';
@@ -6,6 +6,13 @@ import axios from 'axios';
 const ProgramCard = ({ program }) => {
   const imageURL = program.imageURL;
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+        useEffect(() => {
+            const token = localStorage.getItem('token');
+            setIsLoggedIn(!!token);
+        }, []);
+    
 
   const handleDelete = async (event) => {
     event.stopPropagation();
@@ -39,7 +46,9 @@ const ProgramCard = ({ program }) => {
         <div className={styles.container}>
           <h4><b>{program.name.substring(0, 20)}</b></h4>
           <p>{program.description.substring(0, 20)}</p>
+          {isLoggedIn && (
           <button onClick={handleDelete}>Delete</button>
+          )}
         </div>
       </div>
       {isOpen && (

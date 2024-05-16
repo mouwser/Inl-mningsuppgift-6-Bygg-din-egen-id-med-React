@@ -9,6 +9,12 @@ const Mealplans = () => {
     const [mealplans, setMealplans] = useState([]);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [newMealplan, setNewMealplan] = useState({ name: '', description: '', imageUrl: '' });
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        setIsLoggedIn(!!token);
+    }, []);
 
     useEffect(() => {
         fetch('https://localhost:7109/api/Mealplans')
@@ -27,6 +33,7 @@ const Mealplans = () => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'Authorization': `Bearer ${localStorage.getItem('token')}`
             },
             body: JSON.stringify(newMealplan),
         })
@@ -43,7 +50,9 @@ const Mealplans = () => {
             <Navbar />
             <h1 className={styles.h1}>Meal Plans</h1>
             <p className={styles.p}>Here you will find all the meal plans.</p>
+            {isLoggedIn && (
             <button onClick={() => setIsModalOpen(true)} className={styles.addButton}>Add Meal Plan</button>
+        )}
             {isModalOpen && (
                 <div className={styles.modal}>
                     <span onClick={() => setIsModalOpen(false)} className={styles.closeButton}>&times;</span>

@@ -1,13 +1,38 @@
 import React, { useState } from 'react';
 import styles from '@/styles/login.module.css';
+import { useRouter } from 'next/router';
 
 const LoginComponent = () => {
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const router = useRouter();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    
+    const handleSubmit = async (event) => {
+      event.preventDefault();
+  
+      const response = await fetch('https://localhost:7109/login', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            
+              email: email,
+              password: password,
+          }),
+      });
+  
+      if (response.ok) {
+          const data = await response.json();
+          console.log(data);
+          // handle successful login
+          localStorage.setItem('token', data.accessToken);
+          
+          router.push('/profile');
+      } else {
+          // handle error
+          console.log('Login failed');
+      }
   };
 
   return (
@@ -16,8 +41,8 @@ const LoginComponent = () => {
       <div className={styles.loginaccountcontainer}>
       <form onSubmit={handleSubmit}>
         <label>
-          Username:
-          <input className={styles.username} type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+          Email:
+          <input className={styles.email} type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
         </label>
         <br />
         <label>

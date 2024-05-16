@@ -9,6 +9,12 @@ import Link from 'next/link';
         const [programs, setPrograms] = useState([]);
         const [isModalOpen, setIsModalOpen] = useState(false);
         const [newProgram, setNewProgram] = useState({ name: '', description: '', imageUrl: '' });
+        const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+        useEffect(() => {
+            const token = localStorage.getItem('token');
+            setIsLoggedIn(!!token);
+        }, []);
     
         useEffect(() => {
             fetch('https://localhost:7109/api/Gymprograms')
@@ -27,6 +33,7 @@ import Link from 'next/link';
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`
                 },
                 body: JSON.stringify(newProgram),
             })
@@ -43,7 +50,9 @@ import Link from 'next/link';
                 <Navbar />
                 <h1 className={styles.h1}>Workout programs</h1>
                 <p className={styles.p}>Here you will find all the workout programs.</p>
+                {isLoggedIn && (
                 <button onClick={() => setIsModalOpen(true)} className={styles.addButton}>Add Program</button>
+            )}  
                 {isModalOpen && (
                     <div className={styles.modal}>
                         <span onClick={() => setIsModalOpen(false)} className={styles.closeButton}>&times;</span>
