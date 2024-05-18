@@ -63,7 +63,7 @@ const Mealplans = () => {
                         </label>
                         <label>
                             Meal Plan Description:
-                            <input type="text" name="description" value={newMealplan.description} onChange={handleInputChange} required />
+                            <textarea type="text" name="description" className={styles.description} value={newMealplan.description} onChange={handleInputChange} required />
                         </label>
                         <label>
                             Meal Plan Image URL:

@@ -24,14 +24,16 @@ const LoginComponent = () => {
   
       if (response.ok) {
           const data = await response.json();
-          console.log(data);
+          
           // handle successful login
           localStorage.setItem('token', data.accessToken);
+          localStorage.setItem('email', email);
           
           router.push('/profile');
       } else {
           // handle error
-          console.log('Login failed');
+          alert('Login failed, Email or Password is incorrect!');
+          return;
       }
   };
 

@@ -13,10 +13,14 @@ const LoginPage = () => {
             <div className={styles.logincontainer}>
                 <div className={styles.centerContent}>
                     {showLogin ? <LoginComponent /> : <CreateAccountComponent />}
-                <div className={styles.buttonContainer}>    
-                    <button className={styles.button} onClick={() => setShowLogin(true)}>Login</button>
-                    <button className={styles.button} onClick={() => setShowLogin(false)}>Create Account</button>
-                </div>
+                    <div className={styles.buttonContainer}>
+                        <button
+                            className={styles.button}
+                            onClick={() => setShowLogin(!showLogin)}
+                        >
+                            {showLogin ? 'Create Account' : 'login using existing account'}
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

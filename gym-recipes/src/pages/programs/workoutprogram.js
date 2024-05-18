@@ -43,7 +43,9 @@ import Link from 'next/link';
                 setIsModalOpen(false);
                 setNewProgram({ name: '', description: '', imageUrl: '' });
             });
-        };
+                };
+
+                
     
         return (
             <div>
@@ -63,11 +65,11 @@ import Link from 'next/link';
                             </label>
                             <label>
                                 Program Description:
-                                <input type="text" name="description" value={newProgram.description} onChange={handleInputChange} required />
+                                <textarea type="text" name="description" className={styles.description} value={newProgram.description} onChange={handleInputChange} required />
                             </label>
                             <label>
                                 Program Image URL:
-                                <input type="text" name="imageUrl" value={newProgram.imageUrl} onChange={handleInputChange} 
+                                <input type="text" name="imageURL" value={newProgram.imageURL} onChange={handleInputChange} 
                                 required pattern="https?://.+" title="Please enter a valid URL." />
                             </label>
                             <button type="submit">Add Program</button>

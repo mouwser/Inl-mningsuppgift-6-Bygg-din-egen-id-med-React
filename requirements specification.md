@@ -42,8 +42,8 @@ GymRecipes is a web application designed to consolidate fitness and nutrition re
 - Contact form:
     contact form for contact.
 
-- Profile page with achievments:
-    add a page for the profile. Add the achievments .
+- Profile page :
+    add a page for the profile that unlocks when you login.
 
 - Click programs:
     be able to click on the workout and meal programs and see info about them.

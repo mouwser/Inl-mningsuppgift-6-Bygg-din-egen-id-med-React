@@ -1,13 +1,38 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import styles from '@/styles/login.module.css';
 
 const CreateAccountComponent = () => {
-  const [username, setUsername] = useState('');
+  const [email, setemail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const router = useRouter();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+
+    if (password !== confirmPassword) {
+      alert('Passwords do not match');
+      return;
+  }
+
+  const response = await fetch('https://localhost:7109/register', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email, password }),
+  });
+
+  if (response.ok) {
+    localStorage.setItem('token', data.accessToken);
+    localStorage.setItem('email', email);
+     
+      router.push('/profile');
+  } else {
+     
+    alert('account creation failed, Email already exists or Password is too short! use capital letters, numbers and special characters!');
+  }
     
   };
 
@@ -18,7 +43,7 @@ const CreateAccountComponent = () => {
       <form onSubmit={handleSubmit}>
         <label>
           Username:
-          <input className={styles.username} type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+          <input className={styles.username} type="text" value={email} onChange={(e) => setemail(e.target.value)} />
         </label>
         <br />
         <label>

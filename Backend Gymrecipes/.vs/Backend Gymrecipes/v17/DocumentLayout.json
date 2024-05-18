@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Desktop\\Inl-mningsuppgift-6-Bygg-din-egen-id-med-React\\Backend Gymrecipes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD60363-F0BF-422E-9D97-1FA0D15F0ECC}|Backend Gymrecipes.csproj|f:\\desktop\\inl-mningsuppgift-6-bygg-din-egen-id-med-react\\backend gymrecipes\\controllers\\mealplanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD60363-F0BF-422E-9D97-1FA0D15F0ECC}|Backend Gymrecipes.csproj|solutionrelative:controllers\\mealplanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD60363-F0BF-422E-9D97-1FA0D15F0ECC}|Backend Gymrecipes.csproj|f:\\desktop\\inl-mningsuppgift-6-bygg-din-egen-id-med-react\\backend gymrecipes\\models\\mealplans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD60363-F0BF-422E-9D97-1FA0D15F0ECC}|Backend Gymrecipes.csproj|solutionrelative:models\\mealplans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD60363-F0BF-422E-9D97-1FA0D15F0ECC}|Backend Gymrecipes.csproj|f:\\desktop\\inl-mningsuppgift-6-bygg-din-egen-id-med-react\\backend gymrecipes\\controllers\\gymprogramscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD60363-F0BF-422E-9D97-1FA0D15F0ECC}|Backend Gymrecipes.csproj|solutionrelative:controllers\\gymprogramscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD60363-F0BF-422E-9D97-1FA0D15F0ECC}|Backend Gymrecipes.csproj|f:\\desktop\\inl-mningsuppgift-6-bygg-din-egen-id-med-react\\backend gymrecipes\\models\\gymprograms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD60363-F0BF-422E-9D97-1FA0D15F0ECC}|Backend Gymrecipes.csproj|solutionrelative:models\\gymprograms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Mealplans.cs",
+              "DocumentMoniker": "F:\\Desktop\\Inl-mningsuppgift-6-Bygg-din-egen-id-med-React\\Backend Gymrecipes\\Models\\Mealplans.cs",
+              "RelativeDocumentMoniker": "Models\\Mealplans.cs",
+              "ToolTip": "F:\\Desktop\\Inl-mningsuppgift-6-Bygg-din-egen-id-med-React\\Backend Gymrecipes\\Models\\Mealplans.cs",
+              "RelativeToolTip": "Models\\Mealplans.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T09:15:07.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MealplansController.cs",
+              "DocumentMoniker": "F:\\Desktop\\Inl-mningsuppgift-6-Bygg-din-egen-id-med-React\\Backend Gymrecipes\\Controllers\\MealplansController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MealplansController.cs",
+              "ToolTip": "F:\\Desktop\\Inl-mningsuppgift-6-Bygg-din-egen-id-med-React\\Backend Gymrecipes\\Controllers\\MealplansController.cs",
+              "RelativeToolTip": "Controllers\\MealplansController.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAmwH0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T09:13:39.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GymprogramsController.cs",
+              "DocumentMoniker": "F:\\Desktop\\Inl-mningsuppgift-6-Bygg-din-egen-id-med-React\\Backend Gymrecipes\\Controllers\\GymprogramsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GymprogramsController.cs",
+              "ToolTip": "F:\\Desktop\\Inl-mningsuppgift-6-Bygg-din-egen-id-med-React\\Backend Gymrecipes\\Controllers\\GymprogramsController.cs",
+              "RelativeToolTip": "Controllers\\GymprogramsController.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAkwH4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T11:11:32.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Gymprograms.cs",
+              "DocumentMoniker": "F:\\Desktop\\Inl-mningsuppgift-6-Bygg-din-egen-id-med-React\\Backend Gymrecipes\\Models\\Gymprograms.cs",
+              "RelativeDocumentMoniker": "Models\\Gymprograms.cs",
+              "ToolTip": "F:\\Desktop\\Inl-mningsuppgift-6-Bygg-din-egen-id-med-React\\Backend Gymrecipes\\Models\\Gymprograms.cs",
+              "RelativeToolTip": "Models\\Gymprograms.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T11:11:32.845Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
